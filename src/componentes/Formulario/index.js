@@ -6,21 +6,11 @@ import './Formulario.css'
 
 const Formulario = (props) => {
 
-    const times = [
-        'Programação',
-        'Front-End',
-        'Data Science',
-        'Devops',
-        'UX e Design',
-        'Mobile',
-        'Inovação e Gestão'
-    ]
-
     const [colaborador, setcolaborador] = useState({})
     
     const aoSalvar = (evento) => {
         evento.preventDefault()
-        props.aoColaboradorCadastrado(colaborador)
+        props.aoColaboradorCadastrado(colaborador) 
     }
 
     return (
@@ -56,7 +46,7 @@ const Formulario = (props) => {
                 <ListaSuspensa 
                     obrigatorio={true} 
                     label="Time" 
-                    itens={times}
+                    itens={props.times}
                     valor={colaborador.time}
                     aoAlterado={valor => setcolaborador(anterior => {
                         return {...anterior, time: valor}
