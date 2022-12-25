@@ -6,11 +6,12 @@ import './Formulario.css'
 
 const Formulario = (props) => {
 
-    const [colaborador, setcolaborador] = useState({})
+    const [colaborador, setColaborador] = useState({})
     
     const aoSalvar = (evento) => {
         evento.preventDefault()
         props.aoColaboradorCadastrado(colaborador) 
+        setColaborador({nome: '', cargo: '', imagemURL: '', time: ''})
     }
 
     return (
@@ -22,7 +23,7 @@ const Formulario = (props) => {
                     label="Nome" 
                     placeholder="Digite seu nome"
                     valor={colaborador.nome}
-                    aoAlterado={valor => setcolaborador(anterior => {
+                    aoAlterado={valor => setColaborador(anterior => {
                         return {...anterior, nome: valor}
                     })}
                 />
@@ -31,7 +32,7 @@ const Formulario = (props) => {
                     label="Cargo" 
                     placeholder="Digite seu cargo"
                     valor={colaborador.cargo}
-                    aoAlterado={valor => setcolaborador(anterior => {
+                    aoAlterado={valor => setColaborador(anterior => {
                         return {...anterior, cargo: valor}
                     })}
                 />
@@ -39,7 +40,7 @@ const Formulario = (props) => {
                     label="Imagem" 
                     placeholder="Digite o endereço da imagem"
                     valor={colaborador.imagemURL}
-                    aoAlterado={valor => setcolaborador(anterior => {
+                    aoAlterado={valor => setColaborador(anterior => {
                         return {...anterior, imagemURL: valor}
                     })}
                 />
@@ -48,7 +49,7 @@ const Formulario = (props) => {
                     label="Time" 
                     itens={props.times}
                     valor={colaborador.time}
-                    aoAlterado={valor => setcolaborador(anterior => {
+                    aoAlterado={valor => setColaborador(anterior => {
                         return {...anterior, time: valor}
                     })}
                 />
