@@ -1,0 +1,38 @@
+.rodape {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px calc(15%);
+    background-color: #6278F7;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.rodape__redes-sociais {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.rodape__icones-redes {
+    width: 20px;
+    height: fit-content;
+}
+
+.rodape__logo {
+    height: 40px;
+    align-self: center;
+}
+
+@media screen and (min-width: 1024px) {
+    .rodape {
+        padding: 20px calc(25%);
+    }
+}
+
+@media screen and (min-width: 1800px) {
+    .rodape {
+        padding: 20px calc(35%);
+    }
+}

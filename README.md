@@ -19,8 +19,13 @@ Este projeto foi desenvolvido durante o curso [react: desenvolvendo com javascri
 * Componentes funcionais e componentes de classes;
 * props e como passar informação entre compoente de diferentes níveis;
     * props.children
+    * destructing operator com props
+    * passar funções por meio das props para passar esses dados para o elemento pai.
 * Uso de métodos de array para iteração de componentes;
+    * map;
+    * filter;
 * Eventos no react(eventos sintéticos)
 * Hooks
     * useState - com strings e objetos
-        * setState - como reaproveitar o estado anterior.
+        * como reaproveitar o estado anterior.
+    * useEffects - para impedir loop infinito
