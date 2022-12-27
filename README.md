@@ -1,14 +1,18 @@
+<img src="https://github.com/SamuraiSamuka/Imagens/blob/main/alura.png">
+
+<hr>
+
 # Organo
 
-Este projeto foi desenvolvido durante o curso [react: desenvolvendo com javascript](https://www.alura.com.br/curso-online-react-desenvolvendo-javascript) da Alura
+O Organo é uma plataforma de cadastro de colaboradores da empresa Alura.
 
-## Figma do projeto
+# Proposta do projeto
 
-[Design do organo](https://www.figma.com/file/T6BLI1HfB81eYOiVgpqQz7/Projeto-Intro-ao-React?node-id=134%3A128&t=3vlZEE9tCnspHVFm-0)
+Este projeto foi desenvolvido a partir do zero, durante o curso [react: desenvolvendo com javascript](https://www.alura.com.br/curso-online-react-desenvolvendo-javascript), do zero, com base no figma do [Design do organo](https://www.figma.com/file/T6BLI1HfB81eYOiVgpqQz7/Projeto-Intro-ao-React?node-id=134%3A128&t=3vlZEE9tCnspHVFm-0)
 
 ## Tecnologias usadas
 
-* React
+* React-js
 * Javascript
 * HTML
 * CSS
