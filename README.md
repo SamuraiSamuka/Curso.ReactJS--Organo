@@ -33,3 +33,6 @@ Veja aqui o [resultado final](https://react-js-desenvolvendo-com-js-organo.verce
     * useState - com strings e objetos
         * como reaproveitar o estado anterior.
     * useEffects - para impedir loop infinito
+    
+## Certificado do curso
+[Certificado de conclusão](https://cursos.alura.com.br/certificate/sscarvalho123/react-desenvolvendo-javascript)
