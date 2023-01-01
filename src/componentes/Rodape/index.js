@@ -10,7 +10,7 @@ const Rodape = () => {
                     <img className='rodape__icones-redes' src='/imagens/fb.png' alt={''}/>
                 </div>
                 <img className='rodape__logo' src='/imagens/logo.png' alt=''/>
-                <p>Desenvolvido por Samuel</p>
+                <p className='rodape__dev'>Desenvolvido por Samuel</p>
             </div>
         </footer>
     )

@@ -1,8 +1,12 @@
 .rodape {
     display: flex;
-    justify-content: space-between;
-    padding: 20px calc(15%);
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    padding: 30px 15%;
+    
     background-color: #6278F7;
+    
     color: white;
     font-size: 16px;
     font-weight: 500;
@@ -12,27 +16,36 @@
 .rodape__redes-sociais {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 15px;
+    margin-bottom: 15px;
 }
 
 .rodape__icones-redes {
-    width: 20px;
+    width: 25px;
     height: fit-content;
 }
 
 .rodape__logo {
-    height: 40px;
+    height: 45px;
     align-self: center;
 }
 
-@media screen and (min-width: 1024px) {
-    .rodape {
-        padding: 20px calc(25%);
-    }
+.rodape__dev {
+    letter-spacing: 0.5px;
+    min-width: 200px;
+    line-height: 45px;
 }
 
-@media screen and (min-width: 1800px) {
+@media screen and (min-width: 720px) {
     .rodape {
-        padding: 20px calc(35%);
+        flex-direction: row;
+        padding: 20px auto;
+        gap: 30px;
+    }
+
+    .rodape__redes-sociais {
+        margin-bottom: 0;
+        margin-right: 15px;
     }
 }

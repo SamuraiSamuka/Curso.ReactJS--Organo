@@ -19,16 +19,16 @@ Este projeto foi desenvolvido a partir do zero, durante o curso [react: desenvol
 
 ## Conceitos aprendidos
 
-* O que são componentes e como criá-los;
-* Componentes funcionais e componentes de classes;
-* props e como passar informação entre compoente de diferentes níveis;
+* O que são componentes e como criá-los e diferença entre componentes funcionais de classes;
+* props e como passar informação entre componente de diferentes níveis;
     * props.children
+    * passar dados para o elemento pai, através de funções com props.
     * destructing operator com props
-    * passar funções por meio das props para passar esses dados para o elemento pai.
 * Uso de métodos de array para iteração de componentes;
     * map;
     * filter;
 * Eventos no react(eventos sintéticos)
+* Renderização condicional com o operador ternário e operador &&.
 * Hooks
     * useState - com strings e objetos
         * como reaproveitar o estado anterior.
