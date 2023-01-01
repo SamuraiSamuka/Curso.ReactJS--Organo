@@ -19,7 +19,7 @@ Este projeto foi desenvolvido a partir do zero, durante o curso [react: desenvol
 
 ## Conceitos aprendidos
 
-* O que são componentes e como criá-los e diferença entre componentes funcionais de classes;
+* O que são componentes, como criá-los e diferença entre componentes funcionais de classes;
 * props e como passar informação entre componente de diferentes níveis;
     * props.children
     * passar dados para o elemento pai, através de funções com props.
