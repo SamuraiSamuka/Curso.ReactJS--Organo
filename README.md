@@ -5,13 +5,10 @@
 # Organo
 
 O Organo é uma plataforma de cadastro de colaboradores da empresa Alura.
-Veja aqui o [resultado final](https://react-js-desenvolvendo-com-js-organo.vercel.app/)
-<img src='./imagens/prévia.png'>
-<img src='%PUBLIC_URL%//imagens/prévia.png'>
-
-# Proposta do projeto
-
 Este projeto foi desenvolvido a partir do zero, durante o curso [react: desenvolvendo com javascript](https://www.alura.com.br/curso-online-react-desenvolvendo-javascript), do zero, com base no figma do [Design do organo](https://www.figma.com/file/T6BLI1HfB81eYOiVgpqQz7/Projeto-Intro-ao-React?node-id=134%3A128&t=3vlZEE9tCnspHVFm-0)
+
+Veja aqui o [resultado final](https://react-js-desenvolvendo-com-js-organo.vercel.app/):
+<img src='https://github.com/SamuraiSamuka/React_JS-Desenvolvendo_com_JS--Organo/blob/main/public/imagens/pr%C3%A9via%2C.png'>
 
 ## Tecnologias usadas
 
