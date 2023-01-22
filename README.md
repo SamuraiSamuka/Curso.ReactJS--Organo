@@ -26,6 +26,7 @@ Veja aqui o [resultado final](https://react-js-desenvolvendo-com-js-organo.verce
     * props.children
     * passar dados para o elemento pai, através de funções com props.
     * destructing operator com props
+* O que é two-way data binding e one-way data binding(utilizado pelo react);
 * Uso de métodos de array para iteração de componentes;
     * map;
     * filter;
