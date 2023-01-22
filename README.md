@@ -20,6 +20,8 @@ Veja aqui o [resultado final](https://react-js-desenvolvendo-com-js-organo.verce
 ## Conceitos aprendidos
 
 * O que são componentes, como criá-los e diferença entre componentes funcionais de classes;
+* O que é virtual DOM
+* Diferença entre export e export default.
 * props e como passar informação entre componente de diferentes níveis;
     * props.children
     * passar dados para o elemento pai, através de funções com props.
@@ -33,7 +35,6 @@ Veja aqui o [resultado final](https://react-js-desenvolvendo-com-js-organo.verce
     * useState - com strings e objetos
         * como reaproveitar o estado anterior.
     * useEffects - para impedir loop infinito
-* Diferença entre export e export default.
     
 ## Certificados dos cursos
 [Certificado - react: desenvolvendo com javascript](https://cursos.alura.com.br/certificate/sscarvalho123/react-desenvolvendo-javascript)
