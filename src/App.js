@@ -6,43 +6,36 @@ import Time from './componentes/Time';
 
 function App() {
 
-  const times = [
-    {
-      nome: "Programação",
-      corPrimaria:"#57c278",
-      corSecundaria:"#d9f7e9"
-    },
-    {
-      nome: "Front-End",
-      corPrimaria:"#82cffa",
-      corSecundaria:"#e8f8ff"
-    },
-    {
-      nome: "Data Science",
-      corPrimaria:"#a6d157",
-      corSecundaria:"#f0f8e2"
-    },
-    {
-      nome: "Devops",
-      corPrimaria:"#e06b69",
-      corSecundaria:"#fde7e8"
-    },
-    {
-      nome: "UX e Design",
-      corPrimaria:"#d86ebf",
-      corSecundaria:"#fae9f5"
-    },
-    {
-      nome: "Mobile",
-      corPrimaria:"#ffba05",
-      corSecundaria:"#fff5d9"
-    },
-    {
-      nome: "Inovação e Gestão",
-      corPrimaria:"#ff8a29",
-      corSecundaria:"#ffeedf"
-    }
-  ]
+  const [times, setTimes] = useState([
+      {
+        nome: "Programação",
+        cor:"#57c278",
+      },
+      {
+        nome: "Front-End",
+        cor:"#82cffa",
+      },
+      {
+        nome: "Data Science",
+        cor:"#a6d157",
+      },
+      {
+        nome: "Devops",
+        cor:"#e06b69",
+      },
+      {
+        nome: "UX e Design",
+        cor:"#d86ebf",
+      },
+      {
+        nome: "Mobile",
+        cor:"#ffba05",
+      },
+      {
+        nome: "Inovação e Gestão",
+        cor:"#ff8a29",
+      }
+    ])
 
   const inicial = [
     {
@@ -197,6 +190,15 @@ function App() {
     
   }
 
+  function mudarCorDoTime(cor, nome) {
+    setTimes(times.map(time => {
+      if(time.nome === nome){
+        time.cor = cor  
+      }
+      return time
+    }));
+  }
+
   return (
     <div>
       <Banner />
@@ -204,7 +206,8 @@ function App() {
       <section className="times">
         <h1>Minha organização</h1>
         {times.map((time, indice) => 
-          <Time 
+          <Time
+            mudarCor={mudarCorDoTime}
             key={indice} 
             time={time} 
             colaboradores={
