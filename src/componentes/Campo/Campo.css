@@ -1,0 +1,28 @@
+.campo__text label, .campo__color label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 24px;
+}
+
+.campo__text input {
+    background-color: #FFF;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.06);
+    width: 100%;
+    border: none;
+    font-size: 24px;
+    padding: 24px;
+    box-sizing: border-box;
+}
+
+.campo__color{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.campo__color input {
+    width: 80%;
+    height: 70px;
+    padding: 5px;
+    background-color: white;
+}

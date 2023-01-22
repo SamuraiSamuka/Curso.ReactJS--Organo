@@ -19,14 +19,15 @@ Veja aqui o [resultado final](https://react-js-desenvolvendo-com-js-organo.verce
 
 ## Conceitos aprendidos
 
-* O que são componentes, como criá-los e diferença entre componentes funcionais de classes;
 * O que é virtual DOM
 * Diferença entre export e export default.
+* O que são componentes, como criá-los e diferença entre componentes funcionais de classes;
 * props e como passar informação entre componente de diferentes níveis;
     * props.children
     * passar dados para o elemento pai, através de funções com props.
     * destructing operator com props
 * O que é two-way data binding e one-way data binding(utilizado pelo react);
+* Refatorar componentes
 * Uso de métodos de array para iteração de componentes;
     * map;
     * filter;
