@@ -270,7 +270,7 @@ function App() {
 
   return (
     <div>
-      <Banner />
+      <Banner enderecoImagem='/imagens/banner.png' textoAlternativo='O banner principal da página do Organo'/>
       <Formulario
         cadastrarTime={cadastrarTime}
         times={times.map(time => time.nome)} 
@@ -281,7 +281,7 @@ function App() {
         {times.map((time, indice) => 
           <Time
             mudarCor={mudarCorDoTime}
-            key={indice} 
+            key={time.id} 
             time={time} 
             colaboradores={
               colaboradores.filter(colaborador => colaborador.time === time.nome)}

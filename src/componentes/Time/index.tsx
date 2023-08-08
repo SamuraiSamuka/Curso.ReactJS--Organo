@@ -1,7 +1,17 @@
+import { IColaborador } from '../../shared/interfaces/IColaborador'
+import { ITime } from '../../shared/interfaces/ITime'
 import Colaborador from '../Colaborador'
 import './Time.css'
 
-const Time = ({ time, colaboradores, aoDeletar, mudarCor, aoFavoritar }) => {
+interface TimeProps {
+    colaboradores: IColaborador[]
+    time: ITime
+    mudarCor: (cor:string, id:string) => ITime
+    aoDeletar: (id: string) => void
+    aoFavoritar: (id: string) => IColaborador
+}
+
+const Time = ({ time, colaboradores, aoDeletar, mudarCor, aoFavoritar }: TimeProps) => {
     return (
         colaboradores.length > 0 ?
         <section className='time' style={{ backgroundImage: 'url(/imagens/fundo.png)', backgroundColor: time.cor.concat('77') }}>
@@ -10,7 +20,7 @@ const Time = ({ time, colaboradores, aoDeletar, mudarCor, aoFavoritar }) => {
             <div className='time__colaboradores'>
                 {colaboradores.map((colaborador, indice) => {
                     return (<Colaborador 
-                                key={indice} 
+                                key={colaborador.id} 
                                 colaborador={colaborador} 
                                 corDeFundo={time.cor} 
                                 aoDeletar={aoDeletar} 
