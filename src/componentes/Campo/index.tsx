@@ -1,14 +1,14 @@
 import './Campo.css'
 
 interface CampoProps {
-    type: string
+    type?: string
     label: string
     placeholder: string
     valor: string
-    obrigatorio: boolean
+    obrigatorio?: boolean
     aoAlterado: (valor: string) => void
 }
-const Campo = ({ type = 'text', label, placeholder, valor, aoAlterado, obrigatorio = false }:CampoProps) => {
+const Campo = ({label, placeholder, valor, aoAlterado, type = 'text', obrigatorio = false }:CampoProps) => {
     return (<div className={`campo__${type}`}>
         <label>{label}</label>
         <input 

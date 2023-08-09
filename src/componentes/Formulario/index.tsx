@@ -3,8 +3,16 @@ import Botao from '../Botao'
 import Campo from '../Campo'
 import ListaSuspensa from '../ListaSuspensa'
 import './Formulario.css'
+import { ITime } from '../../shared/interfaces/ITime'
+import { IColaborador } from '../../shared/interfaces/IColaborador'
 
-const Formulario = ({ aoCadastrar, times, cadastrarTime}) => {
+interface FormularioProps {
+    times: string[]
+    cadastrarTime: (novoTime: ITime) => void
+    aoCadastrar: (colaborador: IColaborador) => void
+}
+
+const Formulario = ({ aoCadastrar, times, cadastrarTime}:FormularioProps) => {
 
     const [nome, setNome] = useState('')
     const [cargo, setCargo] = useState('')
@@ -13,7 +21,7 @@ const Formulario = ({ aoCadastrar, times, cadastrarTime}) => {
     const [nomeTime, setNomeTime] = useState('')
     const [corTime, setCorTime] = useState('')
     
-    const aoSubmeter = (evento) => {
+    const aoSubmeter = (evento: React.FormEvent<HTMLFormElement>) => {
         evento.preventDefault()
         console.log('form enviado', nome, cargo, imagem, time )
         aoCadastrar({

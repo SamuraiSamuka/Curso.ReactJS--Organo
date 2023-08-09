@@ -1,5 +1,5 @@
 export interface ITime {
-  id: string
+  id?: any
   nome: string
   cor: string
 }

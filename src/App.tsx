@@ -4,6 +4,8 @@ import Banner from './componentes/Banner';
 import Formulario from './componentes/Formulario';
 import Rodape from './componentes/Rodape';
 import Time from './componentes/Time';
+import { ITime } from './shared/interfaces/ITime';
+import { IColaborador } from './shared/interfaces/IColaborador';
 
 function App() {
 
@@ -240,13 +242,13 @@ function App() {
     },
   ]
 
-  const [colaboradores, setColaboradores] = useState(inicial)
+  const [colaboradores, setColaboradores] = useState<IColaborador[]>(inicial)
 
-  function deletarColaborador(id) {
+  function deletarColaborador(id: string) {
     setColaboradores(colaboradores.filter(colaborador => colaborador.id !== id))
   }
 
-  function mudarCorDoTime(cor, id) {
+  function mudarCorDoTime(cor: string, id: string) {
     setTimes(times.map(time => {
       if(time.id === id){
         time.cor = cor
@@ -255,11 +257,11 @@ function App() {
     }));
   }
 
-  function cadastrarTime(novoTime) {
+  function cadastrarTime(novoTime: ITime) {
     setTimes([...times, {...novoTime, id: uuidv4()}])
   }
 
-  function resolverFavorito(id) {
+  function resolverFavorito(id: string) {
     setColaboradores(colaboradores.map(colaborador => {
       if(colaborador.id === id){
         colaborador.favorito = !colaborador.favorito;
@@ -274,7 +276,7 @@ function App() {
       <Formulario
         cadastrarTime={cadastrarTime}
         times={times.map(time => time.nome)} 
-        aoCadastrar={colaborador => setColaboradores([...colaboradores, colaborador])
+        aoCadastrar={(colaborador: IColaborador) => setColaboradores([...colaboradores, colaborador])
       }/>
       <section className="times">
         <h1>Minha organização</h1>

@@ -6,9 +6,9 @@ import './Time.css'
 interface TimeProps {
     colaboradores: IColaborador[]
     time: ITime
-    mudarCor: (cor:string, id:string) => ITime
+    mudarCor: (cor:string, id:string) => void
     aoDeletar: (id: string) => void
-    aoFavoritar: (id: string) => IColaborador
+    aoFavoritar: (id: string) => void
 }
 
 const Time = ({ time, colaboradores, aoDeletar, mudarCor, aoFavoritar }: TimeProps) => {
@@ -28,7 +28,7 @@ const Time = ({ time, colaboradores, aoDeletar, mudarCor, aoFavoritar }: TimePro
                 })}
             </div>
         </section>
-        : ""        
+        : <></>        
     )
 }
 

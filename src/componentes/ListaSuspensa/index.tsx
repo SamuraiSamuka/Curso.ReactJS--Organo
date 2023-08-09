@@ -1,7 +1,16 @@
 import './ListaSuspensa.css'
 
-const ListaSuspensa = ({label, items,  valor, aoAlterado, obrigatorio = false}) => {
-    return (<div className="lista-suspensa">
+interface ListaSuspensaProps {
+    label: string
+    obrigatorio: boolean
+    items: string[]
+    valor: string
+    aoAlterado: (valor: string) => void
+}
+
+const ListaSuspensa = ({label, items,  valor, aoAlterado, obrigatorio = false}:ListaSuspensaProps) => {
+    return (
+    <div className="lista-suspensa">
         <label>{label}</label>
         <select required={obrigatorio} value={valor} onChange={evento => aoAlterado(evento.target.value)}>
             <option />
