@@ -18,6 +18,7 @@ const Formulario = ({ aoCadastrar, times, cadastrarTime}:FormularioProps) => {
     const [cargo, setCargo] = useState('')
     const [imagem, setImagem] = useState('')
     const [time, setTime] = useState('')
+    const [data, setData] = useState('')
     const [nomeTime, setNomeTime] = useState('')
     const [corTime, setCorTime] = useState('')
     
@@ -28,7 +29,8 @@ const Formulario = ({ aoCadastrar, times, cadastrarTime}:FormularioProps) => {
             nome,
             cargo,
             imagem,
-            time
+            time,
+            data
         })
     }
 
@@ -53,6 +55,11 @@ const Formulario = ({ aoCadastrar, times, cadastrarTime}:FormularioProps) => {
                     placeholder='Informe o endereço da imagem '
                     valor={imagem}
                     aoAlterado={valor => setImagem(valor)}/>
+                <Campo 
+                    label='Data de entrada no time' 
+                    valor={data}
+                    type='date'
+                    aoAlterado={valor => setData(valor)}/>
                 <ListaSuspensa 
                     obrigatorio={true}
                     label='Times'
